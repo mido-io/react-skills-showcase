@@ -1,0 +1,122 @@
+.light-dark-mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.light-dark-mode h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111827;
+  /* gray-900 */
+}
+
+.dark .light-dark-mode h1 {
+  color: #ffffff;
+}
+
+.light-dark-mode p {
+  color: #6b7280;
+  /* gray-500 */
+}
+
+.dark .light-dark-mode p {
+  color: #9ca3af;
+  /* gray-400 */
+}
+
+.theme-card {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  /* shadow-xl */
+  border: 1px solid #f3f4f6;
+  /* gray-100 */
+  transition: background-color 0.3s, border-color 0.3s;
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.dark .theme-card {
+  background-color: #1f2937;
+  /* gray-800 */
+  border-color: #374151;
+  /* gray-700 */
+}
+
+.theme-info {
+  font-size: 1.125rem;
+  color: #4b5563;
+  /* gray-600 */
+}
+
+.dark .theme-info {
+  color: #d1d5db;
+  /* gray-300 */
+}
+
+.theme-toggle-btn {
+  position: relative;
+  width: 5rem;
+  /* 20 */
+  height: 2.5rem;
+  /* 10 */
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+  background-color: #d1d5db;
+  /* gray-300 */
+}
+
+.theme-toggle-btn.dark {
+  background-color: #2563eb;
+  /* blue-600 */
+}
+
+.theme-toggle-icon {
+  position: absolute;
+  top: 0.25rem;
+  /* 1 */
+  left: 0.25rem;
+  /* 1 */
+  width: 2rem;
+  /* 8 */
+  height: 2rem;
+  /* 8 */
+  border-radius: 9999px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  /* shadow-md */
+  transform: translateX(0);
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-btn.dark .theme-toggle-icon {
+  transform: translateX(2.5rem);
+  /* translate-x-10 */
+}
+
+.icon-sun {
+  color: #eab308;
+  /* yellow-500 */
+  font-size: 0.875rem;
+}
+
+.icon-moon {
+  color: #2563eb;
+  /* blue-600 */
+  font-size: 0.875rem;
+}
