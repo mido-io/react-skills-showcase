@@ -8,7 +8,7 @@ A comprehensive collection of interactive React components and mini-applications
 
 ## 🚀 Live Demo
 
-![Live](https://mido-io.github.io/react-skills-showcase/)
+**https://mido-io.github.io/react-skills-showcase/**
 
 ## ✨ Features
 
