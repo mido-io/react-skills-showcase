@@ -65,13 +65,13 @@ const ImageSlider = () => {
   // UI
   // ---------------------
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center dark:bg-black p-10">
+    <div className="min-h-screen flex flex-col justify-center items-center dark:bg-black p-4 sm:p-10">
 
       <h1 className="text-4xl font-bold text-white mb-10 tracking-wide">
         Image Slider
       </h1>
 
-      <div className="relative w-[600px] h-[400px] overflow-hidden rounded-xl">
+      <div className="relative w-full max-w-[600px] h-[300px] sm:h-[400px] overflow-hidden rounded-xl">
 
         <BsArrowLeftCircleFill
           className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-4xl cursor-pointer hover:scale-110 transition"
